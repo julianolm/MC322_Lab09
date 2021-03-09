@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_d2SR8J-TEeqBcoZj7oCHzA" name="DiagramaLab9Composicao">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_r4-JkJ-TEeqBcoZj7oCHzA">
+    <importedPackage xmi:type="uml:Profile" href="pathmap://Papyrus_JAVA_PROFILES/java.profile.uml#_6TYLMN0yEd6P1qtlpBOZyg"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_fN92kJ-TEeqBcoZj7oCHzA" name="Pessoa" visibility="public">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_k6NAoJ-TEeqBcoZj7oCHzA" name="nome" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_nEwMoJ-TEeqBcoZj7oCHzA" name="idade" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ogt0UJ-TEeqBcoZj7oCHzA" name="cpf" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_wY6NsJ-VEeqmorpd6aIL6w" name="Lista">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4eiRAJ-VEeqmorpd6aIL6w" name="vetorDePessoas" visibility="private" type="_fN92kJ-TEeqBcoZj7oCHzA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tpqF0KAcEeqkXabkRd6CRg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dk46YJ-WEeqmorpd6aIL6w" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_6pitkKAlEeqkXabkRd6CRg" name="tamanho" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_-2KCgKAmEeqkXabkRd6CRg" name="tamanhoVetor" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Izok0KASEeqkXabkRd6CRg" name="adicionarInicio" concurrency="concurrent">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_yI3Y4KAYEeqkXabkRd6CRg" name="pessoa" type="_fN92kJ-TEeqBcoZj7oCHzA"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_N8mCsKASEeqkXabkRd6CRg" name="adicionarFim">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_8gTt0KAYEeqkXabkRd6CRg" name="pessoa" type="_fN92kJ-TEeqBcoZj7oCHzA"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_QfigkKASEeqkXabkRd6CRg" name="adicionar">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_CwhHoKAZEeqkXabkRd6CRg" name="pessoa" type="_fN92kJ-TEeqBcoZj7oCHzA"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_R9_-cKAZEeqkXabkRd6CRg" name="pos">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_SRUnQKASEeqkXabkRd6CRg" name="removerInicio"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_TP_2AKASEeqkXabkRd6CRg" name="removerFim"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_UHrr8KASEeqkXabkRd6CRg" name="remover">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_OMbxUKAZEeqkXabkRd6CRg" name="pos">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_WZ8CcKASEeqkXabkRd6CRg" name="tamanho">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_nBNk0KBhEeqw9vFvnlLccw" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_XMaoQKASEeqkXabkRd6CRg" name="limpa"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YAP48KASEeqkXabkRd6CRg" name="imprimir"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_3ZqZ8KBhEeqw9vFvnlLccw" name="confereTamanho" visibility="private"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_5a3csKBhEeqw9vFvnlLccw" name="aumentaLista" visibility="private"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_6R-D0KBhEeqw9vFvnlLccw" name="diminuiLista" visibility="private"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_YKHR8J-WEeqmorpd6aIL6w" name="Fila">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_giPvMKASEeqkXabkRd6CRg" name="adicionar">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_J0tjIKAZEeqkXabkRd6CRg" name="pessoa" type="_fN92kJ-TEeqBcoZj7oCHzA"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_hPIDUKASEeqkXabkRd6CRg" name="remover"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_htI1AKASEeqkXabkRd6CRg" name="tamanho">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_TTh5QKBhEeqw9vFvnlLccw" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_iY5u0KASEeqkXabkRd6CRg" name="limpa"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_jlrD8KASEeqkXabkRd6CRg" name="imprimir"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ZAPosJ-WEeqmorpd6aIL6w" name="FilaDeAtendimento">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_bEVxgKAREeqkXabkRd6CRg" name="filaNormal" visibility="private" type="_YKHR8J-WEeqmorpd6aIL6w"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_hZ-d4KAREeqkXabkRd6CRg" name="filaPrioritaria" visibility="private" type="_YKHR8J-WEeqmorpd6aIL6w"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_quZaIKASEeqkXabkRd6CRg" name="adicionar">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_zpkhMKAZEeqkXabkRd6CRg" name="pessoa" type="_fN92kJ-TEeqBcoZj7oCHzA"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_rdhxAKASEeqkXabkRd6CRg" name="adicionarPrioritario" visibility="public">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4X6foKAZEeqkXabkRd6CRg" name="pessoa" type="_fN92kJ-TEeqBcoZj7oCHzA"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_slHrMKASEeqkXabkRd6CRg" name="remover"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_tO1WkKASEeqkXabkRd6CRg" name="tamanho">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_P7V1cKBhEeqw9vFvnlLccw" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_t0KRMKASEeqkXabkRd6CRg" name="imprimir"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_1lSroJ-YEeqmorpd6aIL6w" visibility="package" memberEnd="_1lVu8Z-YEeqmorpd6aIL6w _1lccoJ-YEeqmorpd6aIL6w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1lVH4J-YEeqmorpd6aIL6w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1lVu8J-YEeqmorpd6aIL6w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_1lVu8Z-YEeqmorpd6aIL6w" name="lista" type="_wY6NsJ-VEeqmorpd6aIL6w" association="_1lSroJ-YEeqmorpd6aIL6w"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_1lccoJ-YEeqmorpd6aIL6w" name="pessoa" type="_fN92kJ-TEeqBcoZj7oCHzA" aggregation="composite" association="_1lSroJ-YEeqmorpd6aIL6w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SLR0oJ-ZEeqmorpd6aIL6w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O8gLgJ-ZEeqmorpd6aIL6w" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_jVA4kJ-gEeqAbOfGwqqZPQ" memberEnd="_jVD74J-gEeqAbOfGwqqZPQ _jVFKAJ-gEeqAbOfGwqqZPQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jVDU0J-gEeqAbOfGwqqZPQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jVDU0Z-gEeqAbOfGwqqZPQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_jVD74J-gEeqAbOfGwqqZPQ" name="fila" type="_YKHR8J-WEeqmorpd6aIL6w" association="_jVA4kJ-gEeqAbOfGwqqZPQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_jVFKAJ-gEeqAbOfGwqqZPQ" name="lista" visibility="private" type="_wY6NsJ-VEeqmorpd6aIL6w" aggregation="composite" association="_jVA4kJ-gEeqAbOfGwqqZPQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_63VegKAQEeqkXabkRd6CRg" memberEnd="_63nLUKAQEeqkXabkRd6CRg _636tUKAQEeqkXabkRd6CRg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_63l9MKAQEeqkXabkRd6CRg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_63l9MaAQEeqkXabkRd6CRg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_636tUKAQEeqkXabkRd6CRg" name="filadeatendimento" type="_ZAPosJ-WEeqmorpd6aIL6w" association="_63VegKAQEeqkXabkRd6CRg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_63nLUKAQEeqkXabkRd6CRg" name="fila" type="_YKHR8J-WEeqmorpd6aIL6w" aggregation="composite" association="_63VegKAQEeqkXabkRd6CRg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JiMwcKAREeqkXabkRd6CRg" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_41TdIJ-TEeqBcoZj7oCHzA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_41TdIZ-TEeqBcoZj7oCHzA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/JAVA/1#/"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_JAVA_PROFILES/java.profile.uml#_6TYLMN0yEd6P1qtlpBOZyg"/>
+  </profileApplication>
+</uml:Model>

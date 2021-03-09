@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_aHIMQKAaEeqkXabkRd6CRg" name="DiagramaLab9Heranca">
+  <packagedElement xmi:type="uml:Class" xmi:id="_lMZbEKAbEeqkXabkRd6CRg" name="Pessoa">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_yMz9YKAbEeqkXabkRd6CRg" name="nome" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_y_FH0KAbEeqkXabkRd6CRg" name="idade" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0qUhoKAbEeqkXabkRd6CRg" name="cpf" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_l9Vv0KAbEeqkXabkRd6CRg" name="Lista">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_nPjwMKAcEeqkXabkRd6CRg" name="vetorDePessoas" visibility="private" type="_lMZbEKAbEeqkXabkRd6CRg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r-m5QKAcEeqkXabkRd6CRg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ryiMIKAcEeqkXabkRd6CRg" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_BnIKwKAmEeqkXabkRd6CRg" name="tamanho" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_KJHzoKBrEeqw9vFvnlLccw" name="tamanhoVetor">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_0H4GcKAcEeqkXabkRd6CRg" name="adicionarInicio">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4tSLUKAcEeqkXabkRd6CRg" name="pessoa" type="_lMZbEKAbEeqkXabkRd6CRg"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_7nWIsKAcEeqkXabkRd6CRg" name="adicionarFim">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_-nlmkKAcEeqkXabkRd6CRg" name="pessoa" type="_lMZbEKAbEeqkXabkRd6CRg"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_-_4KwKAcEeqkXabkRd6CRg" name="adicionar" visibility="public">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_B0UoUKAdEeqkXabkRd6CRg" name="pessoa" type="_lMZbEKAbEeqkXabkRd6CRg"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_IuY3cKAdEeqkXabkRd6CRg" name="pos">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_DAWWkKAdEeqkXabkRd6CRg" name="removerInicio"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_WzqJAKAdEeqkXabkRd6CRg" name="removerFim"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_X1bIAKAdEeqkXabkRd6CRg" name="remover">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_ZoSMwKAdEeqkXabkRd6CRg" name="pos">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_cd3SwKAdEeqkXabkRd6CRg" name="tamanho"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_dIPFcKAdEeqkXabkRd6CRg" name="limpa"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_d38rIKAdEeqkXabkRd6CRg" name="imprimir"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ZFaz0KBrEeqw9vFvnlLccw" name="confereTamanho" visibility="private"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_bFkGoKBrEeqw9vFvnlLccw" name="aumentaLista" visibility="private"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_cv9L4KBrEeqw9vFvnlLccw" name="diminuiLista" visibility="private"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_mxES0KAbEeqkXabkRd6CRg" name="Fila">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_xhUFIKAiEeqkXabkRd6CRg" name="lista" visibility="private" type="_l9Vv0KAbEeqkXabkRd6CRg"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_2DiTIKAiEeqkXabkRd6CRg" name="adicionar">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_40lecKAiEeqkXabkRd6CRg" name="pessoa" type="_lMZbEKAbEeqkXabkRd6CRg"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_5NHTMKAiEeqkXabkRd6CRg" name="remover"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_5t8IUKAiEeqkXabkRd6CRg" name="tamanho"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_6QjtMKAiEeqkXabkRd6CRg" name="limpa"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_7DEIMKAiEeqkXabkRd6CRg" name="imprimir"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_nd4VgKAbEeqkXabkRd6CRg" name="FilaDeAtendimento">
+    <generalization xmi:type="uml:Generalization" xmi:id="_UV2loKAkEeqkXabkRd6CRg" general="_mxES0KAbEeqkXabkRd6CRg"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_JixTAKAjEeqkXabkRd6CRg" name="filaNormal" visibility="private" type="_mxES0KAbEeqkXabkRd6CRg"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_NRyicKAjEeqkXabkRd6CRg" name="filaPrioritaria" visibility="private" type="_mxES0KAbEeqkXabkRd6CRg"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_R2El8KAjEeqkXabkRd6CRg" name="adicionar" visibility="public">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hLbmYKAjEeqkXabkRd6CRg" name="pessoa" type="_lMZbEKAbEeqkXabkRd6CRg"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ShJjQKAjEeqkXabkRd6CRg" name="adicionarPrioriario">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_sX43wKAjEeqkXabkRd6CRg" name="pessoa" type="_lMZbEKAbEeqkXabkRd6CRg"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_TyTCEKAjEeqkXabkRd6CRg" name="remover"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_UTylkKAjEeqkXabkRd6CRg" name="tamanho"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_UxkGsKAjEeqkXabkRd6CRg" name="imprimir"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0iycoKAjEeqkXabkRd6CRg" memberEnd="_0i044KAjEeqkXabkRd6CRg _0i3VIKAjEeqkXabkRd6CRg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0i0R0KAjEeqkXabkRd6CRg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0i0R0aAjEeqkXabkRd6CRg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_0i3VIKAjEeqkXabkRd6CRg" name="lista" type="_l9Vv0KAbEeqkXabkRd6CRg" association="_0iycoKAjEeqkXabkRd6CRg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_0i044KAjEeqkXabkRd6CRg" name="pessoa" type="_lMZbEKAbEeqkXabkRd6CRg" aggregation="composite" association="_0iycoKAjEeqkXabkRd6CRg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3GvAEKAjEeqkXabkRd6CRg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2rkHAKAjEeqkXabkRd6CRg" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_K7inUKAkEeqkXabkRd6CRg" visibility="package" memberEnd="_K7jOYqAkEeqkXabkRd6CRg _K7j1cKAkEeqkXabkRd6CRg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_K7jOYKAkEeqkXabkRd6CRg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_K7jOYaAkEeqkXabkRd6CRg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_K7jOYqAkEeqkXabkRd6CRg" name="lista" type="_l9Vv0KAbEeqkXabkRd6CRg" aggregation="composite" association="_K7inUKAkEeqkXabkRd6CRg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_K7j1cKAkEeqkXabkRd6CRg" name="fila" type="_mxES0KAbEeqkXabkRd6CRg" association="_K7inUKAkEeqkXabkRd6CRg"/>
+  </packagedElement>
+</uml:Model>
