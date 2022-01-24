@@ -1,3 +1,3 @@
-### MC322 - Programação Orientada a Objetos
-## Projeto 09
-Este repositório contém a implementação do projeto solicitado no arquivo das especificações. Uma implementação prioriza a utilização de composição entre as classes, enquanto a outra utiliza herança.
+### MC322 - Object Oriented Programming
+## Project 09
+This repository contains the implementations of the project requested in the specifications file. One implementation prioritizes composition among the classes while the other uses inheritance.
